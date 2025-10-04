@@ -1,0 +1,20 @@
+skill,aliases,type
+React,"react.js,reactjs",hard
+TypeScript,"ts,typescript",hard
+JavaScript,"js,javascript",hard
+Next.js,"nextjs,next.js",hard
+Node.js,"node,nodejs",hard
+PostgreSQL,"postgres,psql,postgresql",hard
+MongoDB,"mongo,mongodb",hard
+Cypress,"cypress.io",hard
+Playwright,"",hard
+Jest,"",hard
+Python,"py,python3",hard
+FastAPI,"fast api",hard
+REST,"restful api,rest api",hard
+GraphQL,"graphql",hard
+Docker,"docker",hard
+Kubernetes,"k8s,kubernetes",hard
+AWS,"amazon web services,aws",hard
+Agile,"scrum,kanban",soft
+CI/CD,"ci cd",hard
