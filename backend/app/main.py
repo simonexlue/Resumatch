@@ -1,49 +1,33 @@
-from typing import Literal, List, Optional
+from __future__ import annotations
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-from .nlp.jd_parser import load_skills_dict, parse_job_description
-import os
-from fastapi import Body
+
+from .core.config import settings
+from .core.resources import init_resources
+
+from .api.health import router as health_router
+from .api.jd import router as jd_router
+from .api.resume import router as resume_router
+from .api.analyze import router as analyze_router
 
 app = FastAPI(title="Resumatch API")
 
+# CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=settings.CORS_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Load skills dict and matcher once on startup
-SKILLS_CSV = os.path.join(os.path.dirname(__file__), "nlp", "skills_dict.csv")
-SKILLS_MAP, ALIAS_TO_CANONICAL, MATCHER = load_skills_dict(SKILLS_CSV)
+# Startup: load NLP resources once
+@app.on_event("startup")
+def _startup():
+    app.state.nlp_resources = init_resources()
 
-class ParseJdRequest(BaseModel):
-    raw_text: str
-
-class Requirement(BaseModel):
-    skill: str
-    priority: Literal["must", "nice"]
-
-class ParsedJD(BaseModel):
-    title: Optional[str] = None
-    company: Optional[str] = None
-    seniority: Optional[str] = None
-    requirements: List[Requirement] = []
-    responsibilities: List[str] = []
-
-@app.get("/health")
-def heath():
-    return {"ok": True}
-
-@app.post("/parse-jd", response_model=ParsedJD)
-def parse_jd(payload: ParseJdRequest):
-    result = parse_job_description(payload.raw_text, SKILLS_MAP, ALIAS_TO_CANONICAL, MATCHER)
-    return ParsedJD(**result)
-
-@app.post("/parse-jd-text", response_model=ParsedJD)
-def parse_jd_text(raw_text: str = Body(..., media_type="text/plain")):
-    result = parse_job_description(raw_text, SKILLS_MAP, ALIAS_TO_CANONICAL, MATCHER)
-    return ParsedJD(**result)
+# Routers
+app.include_router(health_router)
+app.include_router(jd_router)
+app.include_router(resume_router)
+app.include_router(analyze_router)

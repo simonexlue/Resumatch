@@ -1,8 +1,0 @@
-{
-  "python.defaultInterpreterPath": "/Users/Simone/Desktop/Resumatch/backend/.venv/bin/python",
-  "python.analysis.extraPaths": [
-    "/Users/Simone/Desktop/Resumatch/backend/.venv/lib/python3.13/site-packages"
-  ],
-  "python.analysis.typeCheckingMode": "basic",
-  "python.terminal.activateEnvironment": true
-}

@@ -1,20 +1,107 @@
 skill,aliases,type
-React,"react.js,reactjs",hard
-TypeScript,"ts,typescript",hard
-JavaScript,"js,javascript",hard
-Next.js,"nextjs,next.js",hard
-Node.js,"node,nodejs",hard
-PostgreSQL,"postgres,psql,postgresql",hard
-MongoDB,"mongo,mongodb",hard
-Cypress,"cypress.io",hard
-Playwright,"",hard
-Jest,"",hard
-Python,"py,python3",hard
-FastAPI,"fast api",hard
-REST,"restful api,rest api",hard
-GraphQL,"graphql",hard
+Agile,"agile",soft
+Algorithms,"algorithms",hard
+Apollo,"apollo,apollo client,apollo server",hard
+Arcadier,"arcadier",hard
+Auth0,"auth0",hard
+AWS,"aws,amazon web services",hard
+AWS Lambda,"aws lambda,lambda",hard
+Babel,"babel",hard
+Bootstrap,"bootstrap",hard
+CI/CD,"ci cd,ci-cd,continuous integration,continuous delivery",hard
+C#,"c#,csharp",hard
+C++,"c++,cpp",hard
+Chakra UI,"chakra ui,chakra",hard
+CircleCI,"circleci",hard
+CloudFormation,"cloudformation",hard
+CloudFront,"cloudfront",hard
+Cloudflare,"cloudflare",hard
+CSS,"css,css3",hard
+Cypress,"cypress",hard
+Data Structures,"data structures,data-structures",hard
+Datadog,"datadog",hard
+Debugging,"debugging",hard
 Docker,"docker",hard
-Kubernetes,"k8s,kubernetes",hard
-AWS,"amazon web services,aws",hard
-Agile,"scrum,kanban",soft
-CI/CD,"ci cd",hard
+Docker Compose,"docker compose,docker-compose",hard
+DynamoDB,"dynamodb,amazon dynamodb",hard
+EKS,"eks,elastic kubernetes service",hard
+Elasticsearch,"elasticsearch,elastic",hard
+ESLint,"eslint",hard
+Express,"express.js,express",hard
+FastAPI,"fast api,fastapi",hard
+Firebase,"firebase",hard
+Firestore,"firestore",hard
+GCP,"google cloud,gcp",hard
+Git,"git",hard
+GitHub Actions,"github actions,gh actions",hard
+Google Analytics,"google analytics,ga",hard
+Google Places API,"google places api",hard
+Grafana,"grafana",hard
+GraphQL,"graphql",hard
+gRPC,"grpc",hard
+Hasura,"hasura",hard
+Helm,"helm",hard
+Heroku,"heroku",hard
+HTML,"html,html5",hard
+IAM,"iam,identity and access management",hard
+Jenkins,"jenkins",hard
+Jest,"jest",hard
+Kafka,"kafka,apache kafka",hard
+Kibana,"kibana",hard
+Kubernetes,"kubernetes,k8s",hard
+LESS,"less",hard
+Liquid,"liquid",hard
+Material UI,"material ui,mui",hard
+Microservices,"microservices,microservice",hard
+Mongoose,"mongoose",hard
+MongoDB,"mongodb,mongo",hard
+MySQL,"mysql",hard
+NET Core,".net core,dotnet core",hard
+.NET,".net,dotnet",hard
+Netlify,"netlify",hard
+New Relic,"new relic",hard
+Next.js,"next.js,nextjs",hard
+NextAuth,"nextauth,next auth",hard
+Nginx,"nginx",hard
+Node.js,"node.js,node,nodejs,node js",hard
+OAuth2,"oauth2,oauth 2.0,oauth",hard
+OpenAI API,"openai api",hard
+OpenAPI/Swagger,"openapi,swagger",hard
+PostgreSQL,"postgresql,postgres,psql",hard
+Prisma,"prisma",hard
+Prettier,"prettier",hard
+Prometheus,"prometheus",hard
+Python,"python,py",hard
+RabbitMQ,"rabbitmq",hard
+React,"react.js,reactjs",hard
+React Native,"react native",hard
+React Query,"react query,tanstack query",hard
+Redis,"redis",hard
+Render,"render",hard
+REST API,"rest api,restful api,rest-apis",hard
+RDS,"rds,amazon rds",hard
+Redux,"redux,redux toolkit",hard
+Route 53,"route 53,route53",hard
+S3,"s3,amazon s3",hard
+Sass,"sass,scss",hard
+Segment,"segment",hard
+Selenium,"selenium",hard
+SendGrid,"sendgrid",hard
+Socket.IO,"socket.io,socketio",hard
+SQLite,"sqlite",hard
+SQL,"sql",hard
+Storybook,"storybook",hard
+Stripe,"stripe",hard
+Supabase,"supabase",hard
+Swift,"swift",hard
+Tailwind CSS,"tailwind,tailwindcss",hard
+tRPC,"trpc",hard
+Terraform,"terraform",hard
+Testing Library,"testing library,@testing-library",hard
+TypeORM,"typeorm",hard
+TypeScript,"typescript,ts",hard
+Vercel,"vercel",hard
+Vite,"vite",hard
+Vitest,"vitest",hard
+WebPack,"webpack",hard
+WebSockets,"websocket,websockets",hard
